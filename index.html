@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KBC Quiz Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <div class="rings">
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="ring">
+          <div class="rin"></div>
+        </div>
+        <div class="border"></div>
+        <div class="rs">&#8377;</div>
+        <div class="rs">&#8377;</div>
+        <div class="rs">&#8377;</div>
+        <div class="rs">&#8377;</div>
+        <div class="rs">&#8377;</div>
+        <div class="rs">&#8377;</div>
+      </div>
+      <div class="diamond"></div>
+      <div class="diamond"></div>
+      <div class="diamond"></div>
+      <div class="diamond"></div>
+      <div class="mainHeading">Crorepati</div>
+      <div class="subHeading1">
+        <div class="char">K</div>
+        <div class="char">A</div>
+        <div class="char">U</div>
+        <div class="char">N</div>
+        <div class="char">&nbsp;</div>
+        <div class="char">B</div>
+        <div class="char">A</div>
+        <div class="char">N</div>
+        <div class="char">E</div>
+        <div class="char">G</div>
+        <div class="char">A</div>
+      </div>
+      <div class="subHeading2">
+        <div class="char">K</div>
+        <div class="char">A</div>
+        <div class="char">U</div>
+        <div class="char">N</div>
+        <div class="char">&nbsp;</div>
+        <div class="char">B</div>
+        <div class="char">A</div>
+        <div class="char">N</div>
+        <div class="char">E</div>
+        <div class="char">G</div>
+        <div class="char">A</div>
+      </div>
+    </div>
+    <div id="game-container">
+      <div id="question-container">
+        <h2 id="question">Loading question...</h2>
+        <div id="options"></div>
+      </div>
+
+      <div id="prize-container">
+        <p>Current Prize: ₹<span id="current-prize">0</span></p>
+        <p>Next Prize: ₹<span id="next-prize">0</span></p>
+        <p>Time Remaining: <span id="timer">0</span> seconds</p>
+      </div>
+
+      <button id="submit-btn" onclick="submitAnswer()">Submit</button>
+    </div>
+
+    <div id="popup" class="hidden">
+      <div id="popup-content">
+        <h2 id="popup-message"></h2>
+        <button onclick="restartGame()">Play Again</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
